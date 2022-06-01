@@ -5,24 +5,28 @@ module.exports = {
   mode: "development",
   entry: {
     index: "./src/index.js",
-    print: "./src/print.js",
-  },
-  devtool: 'inline-source-map',
-  devServer: {
-      static: './dist',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Development",
+      title: "Catching",
     }),
   ],
   output: {
-    filename: "[name].bundle.js",
+    filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
-    publicPath: '/',
   },
-/*   optimization: {
-      runtimeChunk: 'single',
-  } */
+  optimization: {
+    moduleIds: "deterministic",
+    runtimeChunk: "single",
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
+          chunks: "all",
+        },
+      },
+    },
+  },
 };
