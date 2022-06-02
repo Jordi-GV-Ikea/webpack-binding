@@ -36,8 +36,7 @@
         <!-- IKEA HEADER -->
         <esi:include
             onerror="continue"
-            src="https://www.ikea.com/au/en/header-footer/style-fragment-recursive.html?request-path=$(REQUEST_PATH)"
-        >
+            src= <%= htmlWebpackPlugin.options.headerSrc %> >
         </esi:include>
         <!-- updating FAQ scripts -->
         <link
