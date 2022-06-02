@@ -1,1 +1,81 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Custom template</title><link rel="canonical" href="https://www.ikea.com/gb/en/customer-service/support"/><script defer="defer" src="main.bundle.js"></script></head><body><h1>My Header Tag minor than 5</h1><h2>myVar minor than 5</h2></body></html>
+<!DOCTYPE html>
+<html lang="au-EN" dir="ltr">
+  <head>
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
+      ga("create", "UA-101279823-34", "auto");
+      ga("send", "pageview");
+    </script>
+    <meta charset="utf-8" />
+    <title>Customer service – how can we help you?</title>
+    <meta
+      name="description"
+      content="Want to contact IKEA? No problem. Contact us today via phone, email or chat. Select the topic and we will help you on the right channel."
+    />
+    <link
+      rel="canonical"
+      href="https://www.ikea.com/gb/en/customer-service/support/"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="white"
+    />
+    <meta name="robots" content="noindex" />
+    <meta name="googlebot" content="noindex" />
+    <link rel="preconnect" href="https://www.ikea.com" crossorigin />
+    <esi:include
+      onerror="continue"
+      src="https://www.ikea.com/au/en/header-footer/style-fragment-recursive.html?request-path=$(REQUEST_PATH)"
+    ></esi:include>
+    <link
+      rel="stylesheet"
+      href="https://www.ikea.com/global/assets/customer-service/knowledge/searchBundle.css"
+    />
+    <script defer="defer" src="main.bundle.js"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app ...</noscript
+    ><esi:include
+      onerror="continue"
+      src="https://www.ikea.com/au/en/header-footer/header-fragment-recursive.html"
+    ></esi:include>
+    <div id="root" style="min-height: 100vh"></div>
+    <esi:include
+      onerror="continue"
+      src="https://www.ikea.com/au/en/header-footer/footer-fragment-recursive.html"
+    ></esi:include
+    ><esi:include
+      onerror="continue"
+      src="https://www.ikea.com/au/en/header-footer/script-fragment-recursive.html?request-path=$(REQUEST_PATH)"
+    ></esi:include>
+    <script
+      defer="defer"
+      src="https://www.ikea.com/global/assets/customer-service/knowledge/faqDireflowBundle.js"
+    ></script>
+    <script
+      defer="defer"
+      src="https://www.ikea.com/global/assets/customer-service/knowledge/searchBundle.js"
+    ></script>
+  </body>
+</html>

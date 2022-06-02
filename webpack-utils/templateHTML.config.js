@@ -1,24 +1,28 @@
-const a =4;
+const environment = 'prod';
 
 module.exports =  function HTMLconfig  ()  {
-    const title = 'Custom template';
+    const title = 'Customer service – how can we help you?';
     const template= './public/template.html';
-    const canonicalVar=  'https://www.ikea.com/gb/en/customer-service/support';
-    if (a > 5)
+    const googleAnalyticsId= "'UA-101279823-34'";
+    const metaContent = JSON.stringify("Want to contact IKEA? No problem. Contact us today via phone, email or chat. Select the topic and we will help you on the right channel.");
+        
+    if (environment === 'prod')
       return {
         title,
         template,
-        myVar: 'myVar',
+        googleAnalyticsId,
+        metaContent,
         myHeader: 'My Header Tag',
-        canonicalVar,
+        canonicalLink: 'https://www.ikea.com/gb/en/customer-service/support',
       };
     else
       return {
         title,
         template,
-        myVar: 'myVar minor than 5',
+        googleAnalyticsId,
+        metaContent,
         myHeader: 'My Header Tag minor than 5',
-        canonicalVar,
+        canonicalLink: 'https://cte.ikeadt.com/gb/en/customer-service/support',
       };
   }
   
