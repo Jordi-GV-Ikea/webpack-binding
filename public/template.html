@@ -32,11 +32,11 @@
         <meta name="robots" content="noindex" />
         <meta name="googlebot" content="noindex" />
         <!-- Specifically to google -->
-        <link rel="preconnect" href="https://www.ikea.com" crossorigin />
-        <!-- IKEA HEADER -->
+        <link rel="preconnect" href=<%= htmlWebpackPlugin.options.preconectLink %>  crossorigin />
+        <!-- IKEA HEADER-FOOTER STYLE -->
         <esi:include
             onerror="continue"
-            src= <%= htmlWebpackPlugin.options.headerSrc %> >
+            src= <%= htmlWebpackPlugin.options.headerFooterStyleSrc %> >
         </esi:include>
         <!-- updating FAQ scripts -->
         <link
@@ -48,22 +48,24 @@
     <body>
         <noscript>You need to enable JavaScript to run this app ...</noscript>
 
-        <!-- IKEA FOOTER -->
+        <!-- IKEA HEADER  -->
         <esi:include
             onerror="continue"
-            src= <%= htmlWebpackPlugin.options.footerSrc %> >
+            src= <%= htmlWebpackPlugin.options.headerSrc %> >
         </esi:include>
         <!-- Your markup here -->
         <div id="root" style="min-height: 100vh"></div>
 
+        <!-- IKEA FOOTER  -->
         <esi:include
             onerror="continue"
-            src="https://www.ikea.com/au/en/header-footer/footer-fragment-recursive.html"
+            src=<%= htmlWebpackPlugin.options.footerSrc %>
         >
         </esi:include>
+        <!-- IKEA HEADER & FOOTER SCRIPT -->
         <esi:include
             onerror="continue"
-            src="https://www.ikea.com/au/en/header-footer/script-fragment-recursive.html?request-path=$(REQUEST_PATH)"
+            src= <%= htmlWebpackPlugin.options.headerFooterScriptSrc %>
         >
         </esi:include>
 
