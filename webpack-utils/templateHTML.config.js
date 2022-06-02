@@ -56,7 +56,7 @@ const prodHTML = {
 // environments: cte || ppe || prod
 const environment = "prod"; 
 
-module.exports = function HTMLconfig(environment) {
+module.exports = function HTMLconfig() {
   if (environment === "cte") return cteHTML;
   else if (environment === "ppe") return ppeHTML;
   else if (environment === "prod") return prodHTML;
