@@ -51,8 +51,7 @@
         <!-- IKEA FOOTER -->
         <esi:include
             onerror="continue"
-            src="https://www.ikea.com/au/en/header-footer/header-fragment-recursive.html"
-        >
+            src= <%= htmlWebpackPlugin.options.footerSrc %> >
         </esi:include>
         <!-- Your markup here -->
         <div id="root" style="min-height: 100vh"></div>
