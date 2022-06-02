@@ -53,10 +53,10 @@ const prodHTML = {
   footerSrc: JSON.stringify("https://www.ikea.com/au/en/header-footer/footer-fragment-recursive.html"),
   headerFooterScriptSrc: JSON.stringify("https://www.ikea.com/au/en/header-footer/script-fragment-recursive.html?request-path=$(REQUEST_PATH)")
 };
+// environments: cte || ppe || prod
+const environment = "prod"; 
 
-const environment = "prod"; // cte || ppe || prod;
-
-module.exports = function HTMLconfig() {
+module.exports = function HTMLconfig(environment) {
   if (environment === "cte") return cteHTML;
   else if (environment === "ppe") return ppeHTML;
   else if (environment === "prod") return prodHTML;
