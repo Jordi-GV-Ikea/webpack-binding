@@ -21,6 +21,7 @@
     "webpack-dev-server": "^4.9.1"
   },
   "dependencies": {
+    "esi-webpack-plugin": "^6.0.0",
     "lodash": "^4.17.21"
   }
 }
