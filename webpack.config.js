@@ -4,7 +4,7 @@ const EsiWebpackPlugin = require("esi-webpack-plugin");
 const { cteHTML, ppeHTML, prodHTML } = require("./webpack-utils/htmlValues");
 
 // environments: cte || ppe || prod
-const environment = "prod";
+const environment = "cte";
 
 function HTMLconfig() {
   if (environment === "cte") return cteHTML;
@@ -21,7 +21,6 @@ module.exports = {
   stats: {},
   devServer: {
     headers: { "X-IKEA-M2": "global-devs-pastime-brooklyn-earnings" },
-    // headers: { 'Cache-Control': 'no-cache,max-age=0,must-revalidate' },
     hot: true,
     port: 3009,
     open: false,

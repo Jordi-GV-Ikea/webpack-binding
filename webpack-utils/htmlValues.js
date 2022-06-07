@@ -11,7 +11,7 @@ module.exports.cteHTML = {
     headerFooterStyleSrc: JSON.stringify("https://cte.ikeadt.com/au/en/header-footer/style-fragment-recursive.html?request-path=$(REQUEST_PATH)"
     ),
     headerSrc: JSON.stringify(
-      "https://cte.ikeadt.co/au/en/header-footer/header-fragment-recursive.html"
+      "https://cte.ikeadt.com/au/en/header-footer/header-fragment-recursive.html"
     ),
     footerSrc: JSON.stringify("https://cte.ikeadt.com/au/en/header-footer/footer-fragment-recursive.html"),
     headerFooterScriptSrc: JSON.stringify("https://cte.ikeadt.com/au/en/header-footer/script-fragment-recursive.html?request-path=$(REQUEST_PATH)")
