@@ -18,7 +18,8 @@ module.exports.cteHTML = {
   };
   
   module.exports.ppeHTML = {
-    template: "./public/template.html",
+    // template: "./public/template.html",
+    template: "./webpack-utils/ppe-index.html",
     googleAnalyticsId: "'UA-101279823-34'",
     title: "Customer service – how can we help you?",
     metaContent: JSON.stringify(

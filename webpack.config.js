@@ -30,7 +30,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin(HTMLconfig()),
     new EsiWebpackPlugin({
-      baseUrl: environment === "cte"? "https://cte.ikeadt.com": "https://www.ikea.com", 
       onError(src, err) {
         console.error(`Error when resolving ${src}: ${err}`);
       },
@@ -47,3 +46,6 @@ module.exports = {
     clean: true,
   },
 };
+
+// baseUrl: environment === "cte"? "https://cte.ikeadt.com": "https://www.ikea.com", 
+
