@@ -8,8 +8,7 @@ const environment = "cte";
 
 function HTMLconfig() {
   if (environment === "cte") return cteHTML;
-  else if (environment === "ppe") return ppeHTML;
-  else if (environment === "prod") return prodHTML;
+  return prodHTML;
 }
 
 module.exports = {

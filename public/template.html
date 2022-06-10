@@ -20,29 +20,35 @@
             ga('send', 'pageview');
         </script>
         <meta charset="utf-8" />
+        <!-- ****** -->
         <title><%= htmlWebpackPlugin.options.title %></title>
         <meta
             name="description"
             content= <%= htmlWebpackPlugin.options.metaContent %>
         />
+          
         <link rel="canonical" href=<%= htmlWebpackPlugin.options.canonicalLink %>/>
+        <!-- ****  -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
         <meta name="robots" content="noindex" />
         <meta name="googlebot" content="noindex" />
         <!-- Specifically to google -->
-        <link rel="preconnect" href=<%= htmlWebpackPlugin.options.preconectLink %>  crossorigin />
+<!--         <link rel="preconnect" href=<%= htmlWebpackPlugin.options.preconectLink %>  crossorigin />
+ -->        <link rel="preconnect" href="https://www.ikea.com" crossorigin />
+
         <!-- IKEA HEADER-FOOTER STYLE -->
         <esi:include
             onerror="continue"
             src= <%= htmlWebpackPlugin.options.headerFooterStyleSrc %> >
         </esi:include>
+  
         <!-- updating FAQ scripts -->
         <link
             rel="stylesheet"
             href="https://www.ikea.com/global/assets/customer-service/knowledge/searchBundle.css"
-        />
+            />
     </head>
 
     <body>
