@@ -1,6 +1,6 @@
 module.exports.cteHTML = {
-    template: "./public/template.html",
-    // template: "./webpack-utils/cte-index.html",
+    // template: "./public/template.html", // DINAMIC
+    template: "./webpack-utils/cte-index.html", // HARCODED
     googleAnalyticsId: "'CTE-UA-101279823-34'",
     title: "CTE-Customer service – how can we help you?",
     metaContent: JSON.stringify(
