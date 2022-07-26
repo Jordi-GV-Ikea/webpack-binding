@@ -6,8 +6,8 @@ const { cteHTML, ppeHTML, prodHTML } = require("./webpack-utils/htmlValues");
 // environments: cte || ppe || prod
 const environment = "cte";
 
-function HTMLconfig() {
-  if (environment === "cte") return cteHTML;
+function HTMLconfig(marketValues) {
+  if (environment === "cte") return cteHTML(marketValues);
   return prodHTML;
 }
 
@@ -28,7 +28,7 @@ module.exports = function configureConfig(marketValues) {
       // historyApiFallback: true,
     },
     plugins: [
-      new HtmlWebpackPlugin(HTMLconfig()),
+      new HtmlWebpackPlugin(HTMLconfig(marketValues)),
       new EsiWebpackPlugin({
         onError(src, err) {
           console.error(`Error when resolving ${src}: ${err}`);
@@ -48,4 +48,3 @@ module.exports = function configureConfig(marketValues) {
   };
 };
 
-// baseUrl: environment === "cte"? "https://cte.ikeadt.com": "https://www.ikea.com",
