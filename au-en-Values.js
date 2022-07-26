@@ -19,4 +19,24 @@ module.exports = {
     entry: "./src/index.js",
     filename: "[name].bundle.js",
     build: 'build',
+    template: "./webpack-utils/cte-index.html",
+    googleAnalyticsId: "'CTE-UA-101279823-34'",
+    title: "CTE-Customer service – how can we help you?",
+    metaContent: JSON.stringify(
+      "CTE-Want to contact IKEA? No problem. Contact us today via phone, email or chat. Select the topic and we will help you on the right channel."
+    ),
+    canonicalLink: "https://www.ikea.com/au/en/customer-service/support",
+    preconectLink: JSON.stringify("https://www.ikea.com"),
+    headerFooterStyleSrc: JSON.stringify(
+      "https://www.cte.ikeadt.com/ca/en/header-footer/style-fragment-recursive.html?request-path=$(REQUEST_PATH)"
+    ),
+    headerSrc: JSON.stringify(
+      "https://www.cte.ikeadt.com/ca/en/header-footer/header-fragment-recursive.html"
+    ),
+    footerSrc: JSON.stringify(
+      "https://www.cte.ikeadt.com/ca/en/header-footer/footer-fragment-recursive.html"
+    ),
+    headerFooterScriptSrc: JSON.stringify(
+      "https://www.cte.ikeadt.com/au/en/header-footer/script-fragment-recursive.html?request-path=$(REQUEST_PATH)"
+    ),
 }

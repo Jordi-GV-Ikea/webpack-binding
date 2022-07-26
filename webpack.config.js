@@ -1,6 +1,22 @@
 const configureConfig = require('./shared-config');
 
 const marketValues = require('./au-en-Values');
+const {
+  REACT_APP_MARKET_NAME,
+  REACT_APP_CMS_MARKET,
+  REACT_APP_CMS_LOCALE,
+  REACT_APP_SENTRY_DSN,
+  REACT_APP_BUILD_PATH,
+  REACT_APP_MARKET_TEMPLATE,
+  REACT_APP_PORT,
+  REACT_APP_FAQ_LANG_INTEGRATION,
+  REACT_APP_FAQ_LANG_ACCORDION,
+  REACT_APP_FAQ_WIDGET_NON_PROD,
+  REACT_APP_FAQ_WIDGET_PROD,
+  REACT_APP_GOOGLE_ANALYTICS_ID,
+  REACT_APP_REFERENCE_TIMEZONE,
+  REACT_APP_PHRASE_TRANSLATIONS,
+} = require('./market-constants');
 
 module.exports = configureConfig(marketValues);
 

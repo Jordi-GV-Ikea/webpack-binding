@@ -3,6 +3,7 @@ const aux = {
     tech: 'react'
 }
 const cars = ['volvo', 'bmw'];
-console.log('****  ****')
+
+console.log('**** separator ****')
 module.exports = {aux,cars
 };
